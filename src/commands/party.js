@@ -38,10 +38,10 @@ async function playersFromRole(guild, role) {
     .map((m) => m.id);
 }
 
-function partyReplyEmbed(party, guildId) {
+async function partyReplyEmbed(party, guildId) {
   return partyEmbed({
     ...party,
-    maxPlayers: getPartyMaxPlayers(guildId),
+    maxPlayers: await getPartyMaxPlayers(guildId),
   });
 }
 
@@ -116,7 +116,7 @@ module.exports = {
         });
       }
       const max = interaction.options.getInteger('max');
-      const applied = setPartyMaxPlayers(guildId, max);
+      const applied = await setPartyMaxPlayers(guildId, max);
       return interaction.reply({
         embeds: [
           successEmbed(
@@ -135,14 +135,14 @@ module.exports = {
           flags: MessageFlags.Ephemeral,
         });
       }
-      const max = getPartyMaxPlayers(guildId);
+      const max = await getPartyMaxPlayers(guildId);
       if (party.players.length >= max) {
         return interaction.reply({
           embeds: [errorEmbed(`Party is full (**${max}** players). Ask an admin for \`/party setmax\`.`)],
           flags: MessageFlags.Ephemeral,
         });
       }
-      const result = addPlayer(guildId, interaction.user.id);
+      const result = await addPlayer(guildId, interaction.user.id);
       if (result.error === 'already_in') {
         return interaction.reply({
           embeds: [errorEmbed('You are already in this party!')],
@@ -155,7 +155,7 @@ module.exports = {
     }
 
     if (sub === 'leave') {
-      const result = removePlayer(guildId, interaction.user.id);
+      const result = await removePlayer(guildId, interaction.user.id);
       if (result?.error === 'no_party') {
         return interaction.reply({
           embeds: [errorEmbed('No active party.')],
@@ -201,14 +201,14 @@ module.exports = {
           flags: MessageFlags.Ephemeral,
         });
       }
-      const max = getPartyMaxPlayers(guildId);
+      const max = await getPartyMaxPlayers(guildId);
       if (party.players.length >= max) {
         return interaction.reply({
           embeds: [errorEmbed(`Party is full (**${max}/${max}**). Use \`/party setmax\` to raise the limit.`)],
           flags: MessageFlags.Ephemeral,
         });
       }
-      const result = addPlayer(guildId, user.id);
+      const result = await addPlayer(guildId, user.id);
       if (result.error === 'already_in') {
         return interaction.reply({
           embeds: [errorEmbed(`${user} is already in the party.`)],
@@ -241,7 +241,7 @@ module.exports = {
 
       playerIds.add(interaction.user.id);
 
-      const check = validatePlayerCount(playerIds.size, guildId);
+      const check = await validatePlayerCount(playerIds.size, guildId);
       if (!check.ok) {
         return interaction.reply({
           embeds: [errorEmbed(check.message)],
@@ -250,11 +250,11 @@ module.exports = {
       }
 
       const sorted = [...playerIds].sort();
-      const party = startParty(guildId, sorted, interaction.channelId, interaction.user.id);
-      const max = getPartyMaxPlayers(guildId);
+      const party = await startParty(guildId, sorted, interaction.channelId, interaction.user.id);
+      const max = await getPartyMaxPlayers(guildId);
       await interaction.reply({
         embeds: [
-          partyReplyEmbed(party, guildId),
+          await partyReplyEmbed(party, guildId),
           successEmbed(
             'Party started',
             `**${sorted.length}** players · max **${max}**\nOthers can \`/party join\` · host/admins can \`/party add\``
@@ -272,16 +272,16 @@ module.exports = {
           ephemeral: true,
         });
       }
-      return interaction.reply({ embeds: [partyReplyEmbed(party, guildId)] });
+      return interaction.reply({ embeds: [await partyReplyEmbed(party, guildId)] });
     }
 
     if (sub === 'end') {
-      endParty(guildId);
+      await endParty(guildId);
       return interaction.reply({ embeds: [successEmbed('Party ended', 'Thanks for playing! 🎉')] });
     }
 
     if (sub === 'complete') {
-      const result = recordPartyAction(guildId, interaction.user.id, 'completed');
+      const result = await recordPartyAction(guildId, interaction.user.id, 'completed');
       if (!result) {
         return interaction.reply({
           embeds: [errorEmbed('No active party.')],
@@ -294,9 +294,9 @@ module.exports = {
           ephemeral: true,
         });
       }
-      addPoints(guildId, interaction.user.id, { completed: 1, points: 10 });
+      await addPoints(guildId, interaction.user.id, { completed: 1, points: 10 });
       return interaction.reply({
-        embeds: [partyReplyEmbed(result, guildId)],
+        embeds: [await partyReplyEmbed(result, guildId)],
       });
     }
 

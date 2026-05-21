@@ -7,7 +7,7 @@ module.exports = {
     .setName('leaderboard')
     .setDescription('View the server Truth or Dare leaderboard'),
   async execute(interaction) {
-    const entries = getTopPlayers(interaction.guildId);
+    const entries = await getTopPlayers(interaction.guildId);
     await interaction.reply({
       embeds: [leaderboardEmbed(entries, interaction.guild.name)],
     });

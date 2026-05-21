@@ -26,7 +26,7 @@ module.exports = {
     const guildId = interaction.guildId;
 
     if (sub === 'view') {
-      const s = getGuildSettings(guildId);
+      const s = await getGuildSettings(guildId);
       return interaction.reply({
         embeds: [
           infoEmbed('⚙️ Settings', null, [
@@ -39,7 +39,7 @@ module.exports = {
             },
             {
               name: 'Party max players',
-              value: String(getPartyMaxPlayers(interaction.guildId)),
+              value: String(await getPartyMaxPlayers(interaction.guildId)),
               inline: true,
             },
           ]),
@@ -49,7 +49,7 @@ module.exports = {
 
     if (sub === 'nsfw-channel') {
       const enabled = interaction.options.getBoolean('enabled');
-      toggleNsfwChannel(guildId, interaction.channelId, enabled);
+      await toggleNsfwChannel(guildId, interaction.channelId, enabled);
       return interaction.reply({
         embeds: [
           successEmbed(
@@ -70,7 +70,7 @@ module.exports = {
         });
       }
       const enabled = interaction.options.getBoolean('enabled');
-      setNsfwEnabled(guildId, enabled);
+      await setNsfwEnabled(guildId, enabled);
       return interaction.reply({
         embeds: [
           successEmbed(

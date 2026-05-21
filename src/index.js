@@ -4,9 +4,15 @@ const { loadCommands } = require('./handlers/commandHandler');
 const { loadEvents } = require('./handlers/eventHandler');
 const { logger } = require('./utils/logger');
 const { startKeepAlive } = require('./keepAlive');
+const { initDatabase } = require('./utils/db');
 
 if (!config.token || !config.clientId) {
   logger.error('Missing DISCORD_TOKEN or CLIENT_ID in .env — copy .env.example to .env');
+  process.exit(1);
+}
+
+if (!process.env.DATABASE_URL) {
+  logger.error('Missing DATABASE_URL in .env — add your Supabase PostgreSQL connection string');
   process.exit(1);
 }
 
@@ -28,7 +34,14 @@ process.on('uncaughtException', (err) => {
   logger.error('Uncaught exception:', err);
 });
 
-client.login(config.token).catch((err) => {
-  logger.error('Failed to login:', err.message);
-  process.exit(1);
-});
+async function start() {
+  try {
+    await initDatabase();
+    await client.login(config.token);
+  } catch (err) {
+    logger.error('Failed to start:', err.message);
+    process.exit(1);
+  }
+}
+
+start();

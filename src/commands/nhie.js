@@ -7,7 +7,7 @@ module.exports = {
     .setName('nhie')
     .setDescription('Never Have I Ever — random statement for the group'),
   async execute(interaction) {
-    const item = getNhie({
+    const item = await getNhie({
       guildId: interaction.guildId,
       channelId: interaction.channelId,
     });

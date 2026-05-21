@@ -6,9 +6,9 @@ const { logger } = require('../utils/logger');
 module.exports = {
   name: 'ready',
   once: true,
-  execute(client) {
+  async execute(client) {
     reloadQuestions();
-    loadParties();
+    await loadParties();
     client.user.setActivity('Truth or Dare 🎲', { type: ActivityType.Playing });
     logger.success(`Logged in as ${client.user.tag}`);
     logger.info(`Serving ${client.guilds.cache.size} guild(s)`);

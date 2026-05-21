@@ -24,7 +24,7 @@ module.exports = {
         if (!parsed) return;
 
         if (parsed.action === 'vote') {
-          vote(parsed.submissionId, parsed.vote);
+          await vote(parsed.submissionId, parsed.vote);
           return interaction.reply({
             embeds: [errorEmbed('Vote recorded! Thanks for helping moderate submissions.')],
             flags: MessageFlags.Ephemeral,
@@ -34,9 +34,13 @@ module.exports = {
         const categorySlug = parsed.categorySlug === 'any' ? undefined : parsed.categorySlug;
 
         if (parsed.action === 'skip') {
-          addPoints(interaction.guildId, interaction.user.id, { skipped: 1, points: 1 });
+          await addPoints(interaction.guildId, interaction.user.id, { skipped: 1, points: 1 });
           if (interaction.guildId) {
-            const partyResult = recordPartyAction(interaction.guildId, interaction.user.id, 'skipped');
+            const partyResult = await recordPartyAction(
+              interaction.guildId,
+              interaction.user.id,
+              'skipped'
+            );
             if (partyResult?.error === 'not_your_turn') {
               return interaction.reply({
                 embeds: [errorEmbed('Party mode: wait for your turn!')],

@@ -97,7 +97,7 @@ module.exports = {
 
     if (sub === 'approve') {
       const id = interaction.options.getString('submission_id');
-      const subEntry = approveSubmission(id);
+      const subEntry = await approveSubmission(id);
       if (!subEntry) {
         return interaction.reply({ embeds: [errorEmbed('Submission not found.')], flags: MessageFlags.Ephemeral });
       }
@@ -113,12 +113,12 @@ module.exports = {
 
     if (sub === 'reject') {
       const id = interaction.options.getString('submission_id');
-      rejectSubmission(id);
+      await rejectSubmission(id);
       return interaction.reply({ embeds: [successEmbed('Rejected', 'Submission removed from queue.')] });
     }
 
     if (sub === 'queue') {
-      const pending = getPending(interaction.guildId);
+      const pending = await getPending(interaction.guildId);
       const list =
         pending.length > 0
           ? pending.map((p) => `\`${p.id}\` — **${p.type}** (${p.category}): ${p.question.slice(0, 80)}…`).join('\n')

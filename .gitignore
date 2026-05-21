@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 data/recent-questions.json
 data/party-sessions.json
+data/leaderboard.json
+data/submissions.json
+data/settings.json

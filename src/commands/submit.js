@@ -34,7 +34,7 @@ module.exports = {
     const { getCategoryBySlug } = require('../config');
     const cat = getCategoryBySlug(categorySlug);
 
-    const entry = addSubmission({
+    const entry = await addSubmission({
       userId: interaction.user.id,
       guildId: interaction.guildId,
       type,

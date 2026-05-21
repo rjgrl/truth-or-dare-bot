@@ -55,7 +55,7 @@ async function sendQuestion(interaction, type, categorySlug) {
   const channelId = interaction.channelId;
   const options = { categorySlug: categorySlug || 'any', guildId, channelId };
 
-  let item = pickRandom(type, options);
+  let item = await pickRandom(type, options);
   if (!item) item = await maybeAiFallback(type);
 
   if (!item) {

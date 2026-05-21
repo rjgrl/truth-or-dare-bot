@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { config, getCategoryBySlug, RATINGS } = require('../config');
-const { readJson, updateJson } = require('./storage');
+const { query } = require('./db');
 const { logger } = require('./logger');
 
 const TRUTHS_DIR = path.join(__dirname, '..', '..', 'data', 'truths');
@@ -38,28 +38,36 @@ function reloadQuestions() {
   return { truths: truthsCache.length, dares: daresCache.length };
 }
 
-function getRecent(guildId) {
-  const data = readJson('recent-questions.json', {});
-  return data[guildId] || { truth: [], dare: [] };
+async function getRecent(guildId) {
+  const { rows } = await query(
+    'SELECT truth_ids, dare_ids FROM recent_questions WHERE guild_id = $1',
+    [guildId]
+  );
+  if (!rows[0]) return { truth: [], dare: [] };
+  return { truth: rows[0].truth_ids || [], dare: rows[0].dare_ids || [] };
 }
 
-function pushRecent(guildId, type, questionId) {
-  updateJson('recent-questions.json', {}, (data) => {
-    if (!data[guildId]) data[guildId] = { truth: [], dare: [] };
-    const pool = config.recentQuestionPool;
-    const list = data[guildId][type];
-    list.push(questionId);
-    if (list.length > pool) {
-      data[guildId][type] = list.slice(-pool);
-    }
-    return data;
-  });
+async function pushRecent(guildId, type, questionId) {
+  const recent = await getRecent(guildId);
+  const pool = config.recentQuestionPool;
+  const list = [...(recent[type] || []), questionId];
+  const trimmed = list.length > pool ? list.slice(-pool) : list;
+  const truthIds = type === 'truth' ? trimmed : recent.truth;
+  const dareIds = type === 'dare' ? trimmed : recent.dare;
+  await query(
+    `INSERT INTO recent_questions (guild_id, truth_ids, dare_ids)
+     VALUES ($1, $2::jsonb, $3::jsonb)
+     ON CONFLICT (guild_id) DO UPDATE SET
+       truth_ids = EXCLUDED.truth_ids,
+       dare_ids = EXCLUDED.dare_ids`,
+    [guildId, JSON.stringify(truthIds), JSON.stringify(dareIds)]
+  );
 }
 
 const { getGuildSettings } = require('./settings');
 
-function filterByRating(questions, guildId, channelId) {
-  const settings = getGuildSettings(guildId);
+async function filterByRating(questions, guildId, channelId) {
+  const settings = await getGuildSettings(guildId);
   const channelNsfw = settings.nsfwChannels?.includes(channelId);
   const allowNsfw = settings.nsfwEnabled && channelNsfw;
   return questions.filter((q) => {
@@ -69,7 +77,7 @@ function filterByRating(questions, guildId, channelId) {
   });
 }
 
-function filterPool(type, { categorySlug, guildId, channelId }) {
+async function filterPool(type, { categorySlug, guildId, channelId }) {
   const pool = type === 'truth' ? truthsCache : daresCache;
   let filtered = [...pool];
   if (categorySlug && categorySlug !== 'any') {
@@ -78,37 +86,44 @@ function filterPool(type, { categorySlug, guildId, channelId }) {
       filtered = filtered.filter((q) => q.category?.toLowerCase() === cat.name.toLowerCase());
     }
   }
-  filtered = filterByRating(filtered, guildId, channelId);
-  const recent = getRecent(guildId)[type] || [];
+  filtered = await filterByRating(filtered, guildId, channelId);
+  const recent = (await getRecent(guildId))[type] || [];
   const fresh = filtered.filter((q) => !recent.includes(q.id));
   return fresh.length > 0 ? fresh : filtered;
 }
 
-function pickRandom(type, options) {
-  const pool = filterPool(type, options);
+async function pickRandom(type, options) {
+  const pool = await filterPool(type, options);
   if (pool.length === 0) return null;
   const item = pool[Math.floor(Math.random() * pool.length)];
-  pushRecent(options.guildId, type, item.id);
+  await pushRecent(options.guildId, type, item.id);
   return item;
 }
 
-function getNhie(options) {
-  const pool = filterByRating([...nhieCache], options.guildId, options.channelId);
+async function getNhie(options) {
+  const pool = await filterByRating([...nhieCache], options.guildId, options.channelId);
   if (!pool.length) return null;
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-function getDailyChallenge() {
-  const challenges = readJson('daily-challenges.json', { challenges: [] }).challenges || [];
-  if (!challenges.length) return null;
+async function getDailyChallenge() {
+  const { rows } = await query('SELECT challenge FROM daily_challenges ORDER BY position ASC');
+  if (!rows.length) return null;
   const dayOfYear = Math.floor(
     (Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000
   );
-  return { challenge: challenges[dayOfYear % challenges.length], day: dayOfYear };
+  return { challenge: rows[dayOfYear % rows.length].challenge, day: dayOfYear };
 }
 
 function getWheelPunishments() {
-  return readJson('punishments.json', { punishments: [] }).punishments || [];
+  const punishmentsPath = path.join(__dirname, '..', '..', 'data', 'punishments.json');
+  try {
+    if (!fs.existsSync(punishmentsPath)) return [];
+    const data = JSON.parse(fs.readFileSync(punishmentsPath, 'utf8'));
+    return data.punishments || [];
+  } catch {
+    return [];
+  }
 }
 
 function addQuestion(type, entry) {

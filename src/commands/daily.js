@@ -7,7 +7,7 @@ module.exports = {
     .setName('daily')
     .setDescription('Get today\'s Truth or Dare daily challenge'),
   async execute(interaction) {
-    const result = getDailyChallenge();
+    const result = await getDailyChallenge();
     if (!result) {
       return interaction.reply({
         embeds: [errorEmbed('Daily challenges are not configured yet.')],

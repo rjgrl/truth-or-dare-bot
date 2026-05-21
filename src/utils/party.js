@@ -1,23 +1,28 @@
-const { readJson, writeJson, updateJson } = require('./storage');
+const { query } = require('./db');
 
 /** @type {Map<string, object>} */
 const activeParties = new Map();
 
-function loadParties() {
-  const saved = readJson('party-sessions.json', {});
-  for (const [guildId, party] of Object.entries(saved)) {
-    if (party.active) activeParties.set(guildId, party);
+async function loadParties() {
+  const { rows } = await query('SELECT guild_id, party FROM party_sessions WHERE active = true');
+  for (const row of rows) {
+    activeParties.set(row.guild_id, row.party);
   }
 }
 
-function saveParty(guildId, party) {
-  updateJson('party-sessions.json', {}, (data) => {
-    data[guildId] = party;
-    return data;
-  });
+async function saveParty(guildId, party) {
+  await query(
+    `INSERT INTO party_sessions (guild_id, party, active, updated_at)
+     VALUES ($1, $2::jsonb, $3, NOW())
+     ON CONFLICT (guild_id) DO UPDATE SET
+       party = EXCLUDED.party,
+       active = EXCLUDED.active,
+       updated_at = NOW()`,
+    [guildId, JSON.stringify(party), !!party.active]
+  );
 }
 
-function startParty(guildId, players, channelId, hostId = null) {
+async function startParty(guildId, players, channelId, hostId = null) {
   const party = {
     active: true,
     guildId,
@@ -30,7 +35,7 @@ function startParty(guildId, players, channelId, hostId = null) {
     startedAt: Date.now(),
   };
   activeParties.set(guildId, party);
-  saveParty(guildId, party);
+  await saveParty(guildId, party);
   return party;
 }
 
@@ -38,25 +43,25 @@ function getParty(guildId) {
   return activeParties.get(guildId) || null;
 }
 
-function endParty(guildId) {
+async function endParty(guildId) {
   const party = activeParties.get(guildId);
   if (party) {
     party.active = false;
-    saveParty(guildId, party);
+    await saveParty(guildId, party);
   }
   activeParties.delete(guildId);
 }
 
-function nextTurn(guildId) {
+async function nextTurn(guildId) {
   const party = activeParties.get(guildId);
   if (!party) return null;
   party.currentIndex = (party.currentIndex + 1) % party.players.length;
   if (party.currentIndex === 0) party.round += 1;
-  saveParty(guildId, party);
+  await saveParty(guildId, party);
   return party;
 }
 
-function recordPartyAction(guildId, userId, action) {
+async function recordPartyAction(guildId, userId, action) {
   const party = activeParties.get(guildId);
   if (!party) return null;
   const current = party.players[party.currentIndex];
@@ -69,8 +74,8 @@ function recordPartyAction(guildId, userId, action) {
     party.stats.skipped += 1;
     party.stats.points += 2;
   }
-  saveParty(guildId, party);
-  nextTurn(guildId);
+  await saveParty(guildId, party);
+  await nextTurn(guildId);
   return party;
 }
 
@@ -80,18 +85,18 @@ function getCurrentPlayer(guildId) {
   return party.players[party.currentIndex];
 }
 
-function addPlayer(guildId, userId) {
+async function addPlayer(guildId, userId) {
   const party = activeParties.get(guildId);
   if (!party?.active) return { error: 'no_party' };
   if (party.players.some((p) => p.id === userId)) return { error: 'already_in' };
   const { getPartyMaxPlayers } = require('./partyLimits');
-  if (party.players.length >= getPartyMaxPlayers(guildId)) return { error: 'full' };
+  if (party.players.length >= (await getPartyMaxPlayers(guildId))) return { error: 'full' };
   party.players.push({ id: userId });
-  saveParty(guildId, party);
+  await saveParty(guildId, party);
   return { party };
 }
 
-function removePlayer(guildId, userId) {
+async function removePlayer(guildId, userId) {
   const party = activeParties.get(guildId);
   if (!party?.active) return { error: 'no_party' };
   const idx = party.players.findIndex((p) => p.id === userId);
@@ -104,7 +109,7 @@ function removePlayer(guildId, userId) {
   } else if (idx === party.currentIndex) {
     party.currentIndex = party.currentIndex % party.players.length;
   }
-  saveParty(guildId, party);
+  await saveParty(guildId, party);
   return { party };
 }
 

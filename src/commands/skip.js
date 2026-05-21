@@ -7,7 +7,7 @@ module.exports = {
     .setName('skip')
     .setDescription('Skip the current question and get a new random one'),
   async execute(interaction) {
-    addPoints(interaction.guildId, interaction.user.id, { skipped: 1, points: 1 });
+    await addPoints(interaction.guildId, interaction.user.id, { skipped: 1, points: 1 });
     await interaction.deferReply();
     await sendRandom(interaction, undefined);
   },

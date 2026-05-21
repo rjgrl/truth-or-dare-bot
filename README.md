@@ -1,6 +1,6 @@
 # Truth or Dare Discord Bot
 
-A modern, production-ready **Truth or Dare** bot for private friend-group servers. Built with **Node.js** and **Discord.js v14** — free to host, no database, and easy to maintain.
+A modern, production-ready **Truth or Dare** bot for private friend-group servers. Built with **Node.js** and **Discord.js v14** — free to host with **Supabase PostgreSQL** for runtime data and easy to maintain.
 
 ![Node](https://img.shields.io/badge/node-%3E%3D18-green) ![Discord.js](https://img.shields.io/badge/discord.js-14-blue)
 
@@ -11,7 +11,7 @@ A modern, production-ready **Truth or Dare** bot for private friend-group server
 | Core gameplay | `/truth`, `/dare`, `/random`, `/skip` |
 | Categories | `/categories`, optional `category:` on truth/dare/random |
 | Party mode | `/party start`, `join`, `leave`, `add`, `setmax`, `round`, `complete`, `status`, `end` (up to 25+ players) |
-| Leaderboard | `/leaderboard` (local JSON) |
+| Leaderboard | `/leaderboard` (PostgreSQL) |
 | Submissions | `/submit` + voting buttons + `/admin approve` |
 | Extra modes | `/daily`, `/nhie`, `/wheel` |
 | NSFW toggle | `/settings nsfw-channel`, `/settings nsfw-global` |
@@ -19,7 +19,7 @@ A modern, production-ready **Truth or Dare** bot for private friend-group server
 
 **UX:** Rich embeds, action buttons (Next, Skip, Random, Truth, Dare), cooldowns, dare timers, recent-question anti-repeat.
 
-**Data:** 550+ truths and 550+ dares across 10 categories, stored in `data/truths/*.json` and `data/dares/*.json`.
+**Data:** 550+ truths and 550+ dares across 10 categories in `data/truths/*.json` and `data/dares/*.json` (Git). Leaderboard, parties, submissions, settings, and daily challenges live in **Supabase PostgreSQL**.
 
 ---
 
@@ -48,10 +48,13 @@ cp .env.example .env
 Edit `.env`:
 
 ```env
+DATABASE_URL=postgresql://postgres.[ref]:[password]@aws-0-[region].pooler.supabase.com:6543/postgres
 DISCORD_TOKEN=your_bot_token
 CLIENT_ID=your_application_id
 GUILD_ID=your_server_id
 ```
+
+Create a free [Supabase](https://supabase.com) project → **Project Settings → Database** → copy the **URI** connection string into `DATABASE_URL`. Tables are created automatically on first `npm start`.
 
 > **Tip:** Set `GUILD_ID` during development so slash commands appear instantly. Remove it for global registration (can take up to 1 hour).
 
@@ -102,7 +105,7 @@ truth-or-dare-bot/
 │   ├── commands/        # Slash command modules
 │   ├── events/          # ready, interactionCreate
 │   ├── handlers/        # Command & event loaders
-│   ├── utils/           # Embeds, storage, questions, party, etc.
+│   ├── utils/           # Embeds, db, questions, party, etc.
 │   ├── config.js
 │   ├── index.js
 │   └── register-commands.js
@@ -188,6 +191,7 @@ After manual file edits: `/admin reload` or restart the bot.
 
 | Variable | Description |
 |----------|-------------|
+| `DATABASE_URL` | Supabase PostgreSQL connection URI (required) |
 | `DISCORD_TOKEN` | Bot token |
 | `CLIENT_ID` | Application ID |
 | `GUILD_ID` | Optional guild for fast command registration |
@@ -208,7 +212,7 @@ After manual file edits: `/admin reload` or restart the bot.
 
 1. Push this folder to GitHub.
 2. [railway.app](https://railway.app) → **New Project** → Deploy from GitHub.
-3. Add variables: `DISCORD_TOKEN`, `CLIENT_ID`, optionally `GUILD_ID`.
+3. Add variables: `DATABASE_URL`, `DISCORD_TOKEN`, `CLIENT_ID`, optionally `GUILD_ID`.
 4. Start command (set in dashboard or use `railway.toml`):
 
    ```bash

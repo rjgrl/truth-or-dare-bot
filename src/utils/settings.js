@@ -1,28 +1,50 @@
-const { updateJson, readJson } = require('./storage');
 const { config } = require('../config');
+const { query } = require('./db');
 
-function getGuildSettings(guildId) {
-  const all = readJson('settings.json', {});
-  return all[guildId] || { nsfwChannels: [], nsfwEnabled: config.allowNsfwDefault };
+function rowToSettings(row) {
+  if (!row) {
+    return { nsfwChannels: [], nsfwEnabled: config.allowNsfwDefault };
+  }
+  return {
+    nsfwChannels: row.nsfw_channels || [],
+    nsfwEnabled: row.nsfw_enabled,
+    partyMaxPlayers: row.party_max_players ?? undefined,
+  };
 }
 
-function toggleNsfwChannel(guildId, channelId, enabled) {
-  return updateJson('settings.json', {}, (data) => {
-    if (!data[guildId]) data[guildId] = { nsfwChannels: [], nsfwEnabled: config.allowNsfwDefault };
-    const channels = new Set(data[guildId].nsfwChannels || []);
-    if (enabled) channels.add(channelId);
-    else channels.delete(channelId);
-    data[guildId].nsfwChannels = [...channels];
-    return data;
-  })[guildId];
+async function getGuildSettings(guildId) {
+  const { rows } = await query('SELECT * FROM guild_settings WHERE guild_id = $1', [guildId]);
+  return rowToSettings(rows[0]);
 }
 
-function setNsfwEnabled(guildId, enabled) {
-  return updateJson('settings.json', {}, (data) => {
-    if (!data[guildId]) data[guildId] = { nsfwChannels: [], nsfwEnabled: config.allowNsfwDefault };
-    data[guildId].nsfwEnabled = enabled;
-    return data;
-  })[guildId];
+async function ensureGuildRow(guildId) {
+  await query(
+    `INSERT INTO guild_settings (guild_id, nsfw_enabled, nsfw_channels)
+     VALUES ($1, $2, '[]'::jsonb)
+     ON CONFLICT (guild_id) DO NOTHING`,
+    [guildId, config.allowNsfwDefault]
+  );
 }
 
-module.exports = { getGuildSettings, toggleNsfwChannel, setNsfwEnabled };
+async function toggleNsfwChannel(guildId, channelId, enabled) {
+  await ensureGuildRow(guildId);
+  const current = await getGuildSettings(guildId);
+  const channels = new Set(current.nsfwChannels || []);
+  if (enabled) channels.add(channelId);
+  else channels.delete(channelId);
+  const list = [...channels];
+  await query('UPDATE guild_settings SET nsfw_channels = $2::jsonb WHERE guild_id = $1', [
+    guildId,
+    JSON.stringify(list),
+  ]);
+  return { ...current, nsfwChannels: list };
+}
+
+async function setNsfwEnabled(guildId, enabled) {
+  await ensureGuildRow(guildId);
+  await query('UPDATE guild_settings SET nsfw_enabled = $2 WHERE guild_id = $1', [guildId, enabled]);
+  const current = await getGuildSettings(guildId);
+  return { ...current, nsfwEnabled: enabled };
+}
+
+module.exports = { getGuildSettings, toggleNsfwChannel, setNsfwEnabled, ensureGuildRow };
