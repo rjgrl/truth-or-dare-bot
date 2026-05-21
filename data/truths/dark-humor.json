@@ -1,0 +1,387 @@
+[
+  {
+    "id": 331,
+    "question": "What is your coping mechanism after a bad day?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 332,
+    "question": "What is the darkest joke you laugh at anyway?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 333,
+    "question": "What horror movie villain matches your mood today?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 334,
+    "question": "What is something mildly cursed you find funny?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 335,
+    "question": "What would your honest gravestone say?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 336,
+    "question": "What is your spirit animal on a Monday?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 337,
+    "question": "What is the most unhinged thought you had this week?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 338,
+    "question": "What fictional death hit you harder than it should have?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 339,
+    "question": "What is your honest review of adulthood so far?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 340,
+    "question": "What would your villain origin story be?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 341,
+    "question": "What is your coping mechanism after a bad day (round 2)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 342,
+    "question": "What is the darkest joke you laugh at anyway (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 343,
+    "question": "What horror movie villain matches your mood today (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 344,
+    "question": "What is something mildly cursed you find funny (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 345,
+    "question": "What would your honest gravestone say (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 346,
+    "question": "What is your spirit animal on a Monday (round 2)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 347,
+    "question": "What is the most unhinged thought you had this week (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 348,
+    "question": "What fictional death hit you harder than it should have (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 349,
+    "question": "What is your honest review of adulthood so far (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 350,
+    "question": "What would your villain origin story be (round 2)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 351,
+    "question": "What is your coping mechanism after a bad day (round 3)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 352,
+    "question": "What is the darkest joke you laugh at anyway (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 353,
+    "question": "What horror movie villain matches your mood today (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 354,
+    "question": "What is something mildly cursed you find funny (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 355,
+    "question": "What would your honest gravestone say (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 356,
+    "question": "What is your spirit animal on a Monday (round 3)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 357,
+    "question": "What is the most unhinged thought you had this week (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 358,
+    "question": "What fictional death hit you harder than it should have (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 359,
+    "question": "What is your honest review of adulthood so far (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 360,
+    "question": "What would your villain origin story be (round 3)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 361,
+    "question": "What is your coping mechanism after a bad day (round 4)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 362,
+    "question": "What is the darkest joke you laugh at anyway (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 363,
+    "question": "What horror movie villain matches your mood today (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 364,
+    "question": "What is something mildly cursed you find funny (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 365,
+    "question": "What would your honest gravestone say (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 366,
+    "question": "What is your spirit animal on a Monday (round 4)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 367,
+    "question": "What is the most unhinged thought you had this week (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 368,
+    "question": "What fictional death hit you harder than it should have (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 369,
+    "question": "What is your honest review of adulthood so far (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 370,
+    "question": "What would your villain origin story be (round 4)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 371,
+    "question": "What is your coping mechanism after a bad day (round 5)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 372,
+    "question": "What is the darkest joke you laugh at anyway (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 373,
+    "question": "What horror movie villain matches your mood today (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 374,
+    "question": "What is something mildly cursed you find funny (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 375,
+    "question": "What would your honest gravestone say (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 376,
+    "question": "What is your spirit animal on a Monday (round 5)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 377,
+    "question": "What is the most unhinged thought you had this week (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 378,
+    "question": "What fictional death hit you harder than it should have (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 379,
+    "question": "What is your honest review of adulthood so far (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 380,
+    "question": "What would your villain origin story be (round 5)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 381,
+    "question": "What is your coping mechanism after a bad day (round 6)?",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 382,
+    "question": "What is the darkest joke you laugh at anyway (round 6)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 383,
+    "question": "What horror movie villain matches your mood today (round 6)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 384,
+    "question": "What is something mildly cursed you find funny (round 6)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 385,
+    "question": "What would your honest gravestone say (round 6)?",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  }
+]

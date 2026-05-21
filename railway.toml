@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install && npm run generate-data"
+
+[deploy]
+startCommand = "npm run register && npm start"
+restartPolicyType = "on_failure"

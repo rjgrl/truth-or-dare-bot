@@ -1,0 +1,842 @@
+[
+  {
+    "id": 1,
+    "statement": "Never have I ever fallen asleep during a voice call.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 2,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 3,
+    "statement": "Never have I ever had a crush on someone in this server.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 4,
+    "statement": "Never have I ever rage quit a game.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 5,
+    "statement": "Never have I ever sent a text to the wrong person.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 6,
+    "statement": "Never have I ever lied about watching a popular show.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 7,
+    "statement": "Never have I ever been kicked from a voice channel.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 8,
+    "statement": "Never have I ever used a fake name online.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 9,
+    "statement": "Never have I ever stayed up until sunrise gaming.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 10,
+    "statement": "Never have I ever forgotten a friend's birthday.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 11,
+    "statement": "Never have I ever stalked someone's profile before replying.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 12,
+    "statement": "Never have I ever laughed at the wrong moment.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 13,
+    "statement": "Never have I ever eaten food off the floor.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 14,
+    "statement": "Never have I ever blamed lag for losing.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 15,
+    "statement": "Never have I ever had a parasocial moment.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 16,
+    "statement": "Never have I ever fallen asleep during a voice call #2.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 17,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #2.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 18,
+    "statement": "Never have I ever had a crush on someone in this server #2.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 19,
+    "statement": "Never have I ever rage quit a game #2.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 20,
+    "statement": "Never have I ever sent a text to the wrong person #2.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 21,
+    "statement": "Never have I ever lied about watching a popular show #2.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 22,
+    "statement": "Never have I ever been kicked from a voice channel #2.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 23,
+    "statement": "Never have I ever used a fake name online #2.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 24,
+    "statement": "Never have I ever stayed up until sunrise gaming #2.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 25,
+    "statement": "Never have I ever forgotten a friend's birthday #2.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 26,
+    "statement": "Never have I ever stalked someone's profile before replying #2.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 27,
+    "statement": "Never have I ever laughed at the wrong moment #2.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 28,
+    "statement": "Never have I ever eaten food off the floor #2.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 29,
+    "statement": "Never have I ever blamed lag for losing #2.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 30,
+    "statement": "Never have I ever had a parasocial moment #2.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 31,
+    "statement": "Never have I ever fallen asleep during a voice call #3.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 32,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #3.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 33,
+    "statement": "Never have I ever had a crush on someone in this server #3.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 34,
+    "statement": "Never have I ever rage quit a game #3.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 35,
+    "statement": "Never have I ever sent a text to the wrong person #3.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 36,
+    "statement": "Never have I ever lied about watching a popular show #3.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 37,
+    "statement": "Never have I ever been kicked from a voice channel #3.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 38,
+    "statement": "Never have I ever used a fake name online #3.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 39,
+    "statement": "Never have I ever stayed up until sunrise gaming #3.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 40,
+    "statement": "Never have I ever forgotten a friend's birthday #3.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 41,
+    "statement": "Never have I ever stalked someone's profile before replying #3.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 42,
+    "statement": "Never have I ever laughed at the wrong moment #3.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 43,
+    "statement": "Never have I ever eaten food off the floor #3.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 44,
+    "statement": "Never have I ever blamed lag for losing #3.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 45,
+    "statement": "Never have I ever had a parasocial moment #3.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 46,
+    "statement": "Never have I ever fallen asleep during a voice call #4.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 47,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #4.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 48,
+    "statement": "Never have I ever had a crush on someone in this server #4.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 49,
+    "statement": "Never have I ever rage quit a game #4.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 50,
+    "statement": "Never have I ever sent a text to the wrong person #4.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 51,
+    "statement": "Never have I ever lied about watching a popular show #4.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 52,
+    "statement": "Never have I ever been kicked from a voice channel #4.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 53,
+    "statement": "Never have I ever used a fake name online #4.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 54,
+    "statement": "Never have I ever stayed up until sunrise gaming #4.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 55,
+    "statement": "Never have I ever forgotten a friend's birthday #4.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 56,
+    "statement": "Never have I ever stalked someone's profile before replying #4.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 57,
+    "statement": "Never have I ever laughed at the wrong moment #4.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 58,
+    "statement": "Never have I ever eaten food off the floor #4.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 59,
+    "statement": "Never have I ever blamed lag for losing #4.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 60,
+    "statement": "Never have I ever had a parasocial moment #4.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 61,
+    "statement": "Never have I ever fallen asleep during a voice call #5.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 62,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #5.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 63,
+    "statement": "Never have I ever had a crush on someone in this server #5.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 64,
+    "statement": "Never have I ever rage quit a game #5.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 65,
+    "statement": "Never have I ever sent a text to the wrong person #5.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 66,
+    "statement": "Never have I ever lied about watching a popular show #5.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 67,
+    "statement": "Never have I ever been kicked from a voice channel #5.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 68,
+    "statement": "Never have I ever used a fake name online #5.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 69,
+    "statement": "Never have I ever stayed up until sunrise gaming #5.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 70,
+    "statement": "Never have I ever forgotten a friend's birthday #5.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 71,
+    "statement": "Never have I ever stalked someone's profile before replying #5.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 72,
+    "statement": "Never have I ever laughed at the wrong moment #5.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 73,
+    "statement": "Never have I ever eaten food off the floor #5.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 74,
+    "statement": "Never have I ever blamed lag for losing #5.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 75,
+    "statement": "Never have I ever had a parasocial moment #5.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 76,
+    "statement": "Never have I ever fallen asleep during a voice call #6.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 77,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #6.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 78,
+    "statement": "Never have I ever had a crush on someone in this server #6.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 79,
+    "statement": "Never have I ever rage quit a game #6.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 80,
+    "statement": "Never have I ever sent a text to the wrong person #6.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 81,
+    "statement": "Never have I ever lied about watching a popular show #6.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 82,
+    "statement": "Never have I ever been kicked from a voice channel #6.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 83,
+    "statement": "Never have I ever used a fake name online #6.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 84,
+    "statement": "Never have I ever stayed up until sunrise gaming #6.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 85,
+    "statement": "Never have I ever forgotten a friend's birthday #6.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 86,
+    "statement": "Never have I ever stalked someone's profile before replying #6.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 87,
+    "statement": "Never have I ever laughed at the wrong moment #6.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 88,
+    "statement": "Never have I ever eaten food off the floor #6.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 89,
+    "statement": "Never have I ever blamed lag for losing #6.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 90,
+    "statement": "Never have I ever had a parasocial moment #6.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 91,
+    "statement": "Never have I ever fallen asleep during a voice call #7.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 92,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #7.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 93,
+    "statement": "Never have I ever had a crush on someone in this server #7.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 94,
+    "statement": "Never have I ever rage quit a game #7.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 95,
+    "statement": "Never have I ever sent a text to the wrong person #7.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 96,
+    "statement": "Never have I ever lied about watching a popular show #7.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 97,
+    "statement": "Never have I ever been kicked from a voice channel #7.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 98,
+    "statement": "Never have I ever used a fake name online #7.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 99,
+    "statement": "Never have I ever stayed up until sunrise gaming #7.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 100,
+    "statement": "Never have I ever forgotten a friend's birthday #7.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 101,
+    "statement": "Never have I ever stalked someone's profile before replying #7.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 102,
+    "statement": "Never have I ever laughed at the wrong moment #7.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 103,
+    "statement": "Never have I ever eaten food off the floor #7.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 104,
+    "statement": "Never have I ever blamed lag for losing #7.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 105,
+    "statement": "Never have I ever had a parasocial moment #7.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 106,
+    "statement": "Never have I ever fallen asleep during a voice call #8.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 107,
+    "statement": "Never have I ever pretended to be AFK to avoid a dare #8.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 108,
+    "statement": "Never have I ever had a crush on someone in this server #8.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 109,
+    "statement": "Never have I ever rage quit a game #8.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 110,
+    "statement": "Never have I ever sent a text to the wrong person #8.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 111,
+    "statement": "Never have I ever lied about watching a popular show #8.",
+    "category": "Funny",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 112,
+    "statement": "Never have I ever been kicked from a voice channel #8.",
+    "category": "Spicy",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 113,
+    "statement": "Never have I ever used a fake name online #8.",
+    "category": "Relationship",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 114,
+    "statement": "Never have I ever stayed up until sunrise gaming #8.",
+    "category": "Gaming",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 115,
+    "statement": "Never have I ever forgotten a friend's birthday #8.",
+    "category": "Embarrassing",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 116,
+    "statement": "Never have I ever stalked someone's profile before replying #8.",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 117,
+    "statement": "Never have I ever laughed at the wrong moment #8.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 118,
+    "statement": "Never have I ever eaten food off the floor #8.",
+    "category": "Couple",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 119,
+    "statement": "Never have I ever blamed lag for losing #8.",
+    "category": "Party",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 120,
+    "statement": "Never have I ever had a parasocial moment #8.",
+    "category": "Extreme",
+    "rating": "PG13",
+    "enabled": true
+  }
+]

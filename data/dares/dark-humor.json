@@ -1,0 +1,387 @@
+[
+  {
+    "id": 331,
+    "question": "Tell your best dark joke (keep it within server rules).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 332,
+    "question": "Do a horror movie trailer voice for 15 seconds.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 333,
+    "question": "Share your unhinged opinion on pineapple pizza.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 334,
+    "question": "Post your honest Monday mood in one gif.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 335,
+    "question": "Describe your week as a movie title.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 336,
+    "question": "Do a dramatic monologue about being tired.",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 337,
+    "question": "Share a cursed food combo you enjoy.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 338,
+    "question": "Post a meme that represents your brain at 3 AM.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 339,
+    "question": "Say your villain catchphrase.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 340,
+    "question": "Rank the group by who would survive a horror movie.",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 341,
+    "question": "Tell your best dark joke (keep it within server rules) (round 2).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 342,
+    "question": "Do a horror movie trailer voice for 15 seconds (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 343,
+    "question": "Share your unhinged opinion on pineapple pizza (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 344,
+    "question": "Post your honest Monday mood in one gif (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 345,
+    "question": "Describe your week as a movie title (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 346,
+    "question": "Do a dramatic monologue about being tired (round 2).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 347,
+    "question": "Share a cursed food combo you enjoy (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 348,
+    "question": "Post a meme that represents your brain at 3 AM (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 349,
+    "question": "Say your villain catchphrase (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 350,
+    "question": "Rank the group by who would survive a horror movie (round 2).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 351,
+    "question": "Tell your best dark joke (keep it within server rules) (round 3).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 352,
+    "question": "Do a horror movie trailer voice for 15 seconds (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 353,
+    "question": "Share your unhinged opinion on pineapple pizza (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 354,
+    "question": "Post your honest Monday mood in one gif (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 355,
+    "question": "Describe your week as a movie title (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 356,
+    "question": "Do a dramatic monologue about being tired (round 3).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 357,
+    "question": "Share a cursed food combo you enjoy (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 358,
+    "question": "Post a meme that represents your brain at 3 AM (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 359,
+    "question": "Say your villain catchphrase (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 360,
+    "question": "Rank the group by who would survive a horror movie (round 3).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 361,
+    "question": "Tell your best dark joke (keep it within server rules) (round 4).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 362,
+    "question": "Do a horror movie trailer voice for 15 seconds (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 363,
+    "question": "Share your unhinged opinion on pineapple pizza (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 364,
+    "question": "Post your honest Monday mood in one gif (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 365,
+    "question": "Describe your week as a movie title (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 366,
+    "question": "Do a dramatic monologue about being tired (round 4).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 367,
+    "question": "Share a cursed food combo you enjoy (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 368,
+    "question": "Post a meme that represents your brain at 3 AM (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 369,
+    "question": "Say your villain catchphrase (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 370,
+    "question": "Rank the group by who would survive a horror movie (round 4).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 371,
+    "question": "Tell your best dark joke (keep it within server rules) (round 5).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 372,
+    "question": "Do a horror movie trailer voice for 15 seconds (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 373,
+    "question": "Share your unhinged opinion on pineapple pizza (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 374,
+    "question": "Post your honest Monday mood in one gif (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 375,
+    "question": "Describe your week as a movie title (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 376,
+    "question": "Do a dramatic monologue about being tired (round 5).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 377,
+    "question": "Share a cursed food combo you enjoy (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 378,
+    "question": "Post a meme that represents your brain at 3 AM (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 379,
+    "question": "Say your villain catchphrase (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 380,
+    "question": "Rank the group by who would survive a horror movie (round 5).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 381,
+    "question": "Tell your best dark joke (keep it within server rules) (round 6).",
+    "category": "Dark Humor",
+    "rating": "R",
+    "enabled": true
+  },
+  {
+    "id": 382,
+    "question": "Do a horror movie trailer voice for 15 seconds (round 6).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 383,
+    "question": "Share your unhinged opinion on pineapple pizza (round 6).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 384,
+    "question": "Post your honest Monday mood in one gif (round 6).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 385,
+    "question": "Describe your week as a movie title (round 6).",
+    "category": "Dark Humor",
+    "rating": "PG13",
+    "enabled": true
+  }
+]

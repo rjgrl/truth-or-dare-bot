@@ -1,0 +1,9 @@
+run = "npm run register && npm start"
+entrypoint = "src/index.js"
+hidden = ["node_modules", ".env"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm install && npm run generate-data && npm run register && npm start"]

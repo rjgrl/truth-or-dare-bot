@@ -1,0 +1,387 @@
+[
+  {
+    "id": 276,
+    "question": "What subject did you fake understanding the most?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 277,
+    "question": "What is the boldest thing you did in class?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 278,
+    "question": "Who was your secret school crush?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 279,
+    "question": "What excuse worked too well on a teacher?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 280,
+    "question": "What club or activity did you join just for friends?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 281,
+    "question": "What is your most chaotic group project story?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 282,
+    "question": "What did you procrastinate on until the last minute?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 283,
+    "question": "What school rumor about you was actually true?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 284,
+    "question": "What teacher secretly inspired you?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 285,
+    "question": "What would you tell your freshman self?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 286,
+    "question": "What subject did you fake understanding the most (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 287,
+    "question": "What is the boldest thing you did in class (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 288,
+    "question": "Who was your secret school crush (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 289,
+    "question": "What excuse worked too well on a teacher (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 290,
+    "question": "What club or activity did you join just for friends (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 291,
+    "question": "What is your most chaotic group project story (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 292,
+    "question": "What did you procrastinate on until the last minute (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 293,
+    "question": "What school rumor about you was actually true (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 294,
+    "question": "What teacher secretly inspired you (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 295,
+    "question": "What would you tell your freshman self (round 2)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 296,
+    "question": "What subject did you fake understanding the most (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 297,
+    "question": "What is the boldest thing you did in class (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 298,
+    "question": "Who was your secret school crush (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 299,
+    "question": "What excuse worked too well on a teacher (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 300,
+    "question": "What club or activity did you join just for friends (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 301,
+    "question": "What is your most chaotic group project story (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 302,
+    "question": "What did you procrastinate on until the last minute (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 303,
+    "question": "What school rumor about you was actually true (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 304,
+    "question": "What teacher secretly inspired you (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 305,
+    "question": "What would you tell your freshman self (round 3)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 306,
+    "question": "What subject did you fake understanding the most (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 307,
+    "question": "What is the boldest thing you did in class (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 308,
+    "question": "Who was your secret school crush (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 309,
+    "question": "What excuse worked too well on a teacher (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 310,
+    "question": "What club or activity did you join just for friends (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 311,
+    "question": "What is your most chaotic group project story (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 312,
+    "question": "What did you procrastinate on until the last minute (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 313,
+    "question": "What school rumor about you was actually true (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 314,
+    "question": "What teacher secretly inspired you (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 315,
+    "question": "What would you tell your freshman self (round 4)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 316,
+    "question": "What subject did you fake understanding the most (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 317,
+    "question": "What is the boldest thing you did in class (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 318,
+    "question": "Who was your secret school crush (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 319,
+    "question": "What excuse worked too well on a teacher (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 320,
+    "question": "What club or activity did you join just for friends (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 321,
+    "question": "What is your most chaotic group project story (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 322,
+    "question": "What did you procrastinate on until the last minute (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 323,
+    "question": "What school rumor about you was actually true (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 324,
+    "question": "What teacher secretly inspired you (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 325,
+    "question": "What would you tell your freshman self (round 5)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 326,
+    "question": "What subject did you fake understanding the most (round 6)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 327,
+    "question": "What is the boldest thing you did in class (round 6)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 328,
+    "question": "Who was your secret school crush (round 6)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 329,
+    "question": "What excuse worked too well on a teacher (round 6)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  },
+  {
+    "id": 330,
+    "question": "What club or activity did you join just for friends (round 6)?",
+    "category": "School",
+    "rating": "PG13",
+    "enabled": true
+  }
+]

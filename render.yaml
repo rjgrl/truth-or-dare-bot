@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: truth-or-dare-bot
+    env: node
+    buildCommand: npm install && npm run generate-data
+    startCommand: npm run register && npm start
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      - key: NODE_VERSION
+        value: 20

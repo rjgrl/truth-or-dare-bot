@@ -1,0 +1,22 @@
+{
+  "name": "truth-or-dare-bot",
+  "version": "1.0.0",
+  "description": "Modern Truth or Dare Discord bot for friend groups — free to host, easy to maintain.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "register": "node src/register-commands.js",
+    "generate-data": "node scripts/generate-datasets.js"
+  },
+  "keywords": ["discord", "bot", "truth-or-dare"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
