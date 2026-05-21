@@ -3,35 +3,35 @@
     "id": 56,
     "question": "Send a flirty compliment to the third person above you in chat.",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 57,
     "question": "Whisper your hottest take about dating in voice chat.",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 58,
     "question": "Post your most recent liked photo (SFW only).",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 59,
     "question": "Let the group pick your profile picture for 30 minutes (SFW).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 60,
     "question": "Send a \"thinking about you\" text to someone the group names.",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -59,14 +59,14 @@
     "id": 64,
     "question": "React to the last 5 messages in general with only fire emojis.",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 65,
     "question": "Post a selfie with your best \"main character\" pose.",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -80,14 +80,14 @@
     "id": 67,
     "question": "Whisper your hottest take about dating in voice chat (round 2).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 68,
     "question": "Post your most recent liked photo (SFW only) (round 2).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -101,14 +101,14 @@
     "id": 70,
     "question": "Send a \"thinking about you\" text to someone the group names (round 2).",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 71,
     "question": "Describe your type in three spicy words (round 2).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -129,7 +129,7 @@
     "id": 74,
     "question": "React to the last 5 messages in general with only fire emojis (round 2).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -143,28 +143,28 @@
     "id": 76,
     "question": "Send a flirty compliment to the third person above you in chat (round 3).",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 77,
     "question": "Whisper your hottest take about dating in voice chat (round 3).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 78,
     "question": "Post your most recent liked photo (SFW only) (round 3).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 79,
     "question": "Let the group pick your profile picture for 30 minutes (SFW) (round 3).",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -178,35 +178,35 @@
     "id": 81,
     "question": "Describe your type in three spicy words (round 3).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 82,
     "question": "Do your best pick-up line to the camera (round 3).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 83,
     "question": "Share the last song you had on repeat (round 3).",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 84,
     "question": "React to the last 5 messages in general with only fire emojis (round 3).",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 85,
     "question": "Post a selfie with your best \"main character\" pose (round 3).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -220,7 +220,7 @@
     "id": 87,
     "question": "Whisper your hottest take about dating in voice chat (round 4).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
@@ -234,7 +234,7 @@
     "id": 89,
     "question": "Let the group pick your profile picture for 30 minutes (SFW) (round 4).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -248,28 +248,28 @@
     "id": 91,
     "question": "Describe your type in three spicy words (round 4).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 92,
     "question": "Do your best pick-up line to the camera (round 4).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 93,
     "question": "Share the last song you had on repeat (round 4).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 94,
     "question": "React to the last 5 messages in general with only fire emojis (round 4).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "NSFW",
     "enabled": true
   },
   {
@@ -290,14 +290,14 @@
     "id": 97,
     "question": "Whisper your hottest take about dating in voice chat (round 5).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 98,
     "question": "Post your most recent liked photo (SFW only) (round 5).",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -311,42 +311,42 @@
     "id": 100,
     "question": "Send a \"thinking about you\" text to someone the group names (round 5).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 101,
     "question": "Describe your type in three spicy words (round 5).",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 102,
     "question": "Do your best pick-up line to the camera (round 5).",
     "category": "Spicy",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 103,
     "question": "Share the last song you had on repeat (round 5).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 104,
     "question": "React to the last 5 messages in general with only fire emojis (round 5).",
     "category": "Spicy",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 105,
     "question": "Post a selfie with your best \"main character\" pose (round 5).",
     "category": "Spicy",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
@@ -374,7 +374,7 @@
     "id": 109,
     "question": "Let the group pick your profile picture for 30 minutes (SFW) (round 6).",
     "category": "Spicy",
-    "rating": "R",
+    "rating": "NSFW",
     "enabled": true
   },
   {

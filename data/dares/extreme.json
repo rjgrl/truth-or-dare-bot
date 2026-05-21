@@ -3,7 +3,7 @@
     "id": 496,
     "question": "Do 20 push-ups or squats on camera.",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -24,14 +24,14 @@
     "id": 499,
     "question": "Say yes to the next dare no matter what (within reason).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 500,
     "question": "Cold shower challenge: splash water on your face and post reaction.",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -59,28 +59,28 @@
     "id": 504,
     "question": "Do an ice cube challenge for 10 seconds.",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 505,
     "question": "Share a bucket list item you will do this month.",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 506,
     "question": "Do 20 push-ups or squats on camera (round 2).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 507,
     "question": "Let the group dare you one extra mild challenge (round 2).",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -136,7 +136,7 @@
     "id": 515,
     "question": "Share a bucket list item you will do this month (round 2).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -150,49 +150,49 @@
     "id": 517,
     "question": "Let the group dare you one extra mild challenge (round 3).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 518,
     "question": "Post proof of completing the last dare within 5 minutes (round 3).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 519,
     "question": "Say yes to the next dare no matter what (within reason) (round 3).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 520,
     "question": "Cold shower challenge: splash water on your face and post reaction (round 3).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 521,
     "question": "Eat a spoon of a condiment the group picks (if safe) (round 3).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 522,
     "question": "Go live in voice for 1 minute and hype the group (round 3).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 523,
     "question": "Post your most chaotic friend group photo (round 3).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "NSFW",
     "enabled": true
   },
   {
@@ -206,14 +206,14 @@
     "id": 525,
     "question": "Share a bucket list item you will do this month (round 3).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 526,
     "question": "Do 20 push-ups or squats on camera (round 4).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -227,14 +227,14 @@
     "id": 528,
     "question": "Post proof of completing the last dare within 5 minutes (round 4).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 529,
     "question": "Say yes to the next dare no matter what (within reason) (round 4).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -248,14 +248,14 @@
     "id": 531,
     "question": "Eat a spoon of a condiment the group picks (if safe) (round 4).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 532,
     "question": "Go live in voice for 1 minute and hype the group (round 4).",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -269,21 +269,21 @@
     "id": 534,
     "question": "Do an ice cube challenge for 10 seconds (round 4).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 535,
     "question": "Share a bucket list item you will do this month (round 4).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 536,
     "question": "Do 20 push-ups or squats on camera (round 5).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -297,21 +297,21 @@
     "id": 538,
     "question": "Post proof of completing the last dare within 5 minutes (round 5).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 539,
     "question": "Say yes to the next dare no matter what (within reason) (round 5).",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 540,
     "question": "Cold shower challenge: splash water on your face and post reaction (round 5).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -332,14 +332,14 @@
     "id": 543,
     "question": "Post your most chaotic friend group photo (round 5).",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 544,
     "question": "Do an ice cube challenge for 10 seconds (round 5).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -353,21 +353,21 @@
     "id": 546,
     "question": "Do 20 push-ups or squats on camera (round 6).",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 547,
     "question": "Let the group dare you one extra mild challenge (round 6).",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 548,
     "question": "Post proof of completing the last dare within 5 minutes (round 6).",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG",
     "enabled": true
   },
   {

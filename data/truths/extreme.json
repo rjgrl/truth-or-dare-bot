@@ -17,7 +17,7 @@
     "id": 498,
     "question": "What is the most adrenaline you have ever felt?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG",
     "enabled": true
   },
   {
@@ -31,14 +31,14 @@
     "id": 500,
     "question": "What is your honest fear that holds you back?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 501,
     "question": "What stunt would you attempt with safety gear?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -52,7 +52,7 @@
     "id": 503,
     "question": "What would you do if you had zero consequences for one hour?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -66,28 +66,28 @@
     "id": 505,
     "question": "What challenge would you accept right now?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 506,
     "question": "What is the craziest thing on your bucket list (round 2)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 507,
     "question": "What dare would you never do no matter what (round 2)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 508,
     "question": "What is the most adrenaline you have ever felt (round 2)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -101,7 +101,7 @@
     "id": 510,
     "question": "What is your honest fear that holds you back (round 2)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -122,7 +122,7 @@
     "id": 513,
     "question": "What would you do if you had zero consequences for one hour (round 2)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -136,14 +136,14 @@
     "id": 515,
     "question": "What challenge would you accept right now (round 2)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 516,
     "question": "What is the craziest thing on your bucket list (round 3)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "NSFW",
     "enabled": true
   },
   {
@@ -157,42 +157,42 @@
     "id": 518,
     "question": "What is the most adrenaline you have ever felt (round 3)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 519,
     "question": "What rule would you break for $1000 (round 3)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 520,
     "question": "What is your honest fear that holds you back (round 3)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 521,
     "question": "What stunt would you attempt with safety gear (round 3)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 522,
     "question": "What is the riskiest message you have sent (round 3)?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 523,
     "question": "What would you do if you had zero consequences for one hour (round 3)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -206,14 +206,14 @@
     "id": 525,
     "question": "What challenge would you accept right now (round 3)?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 526,
     "question": "What is the craziest thing on your bucket list (round 4)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -227,28 +227,28 @@
     "id": 528,
     "question": "What is the most adrenaline you have ever felt (round 4)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 529,
     "question": "What rule would you break for $1000 (round 4)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 530,
     "question": "What is your honest fear that holds you back (round 4)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 531,
     "question": "What stunt would you attempt with safety gear (round 4)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -262,7 +262,7 @@
     "id": 533,
     "question": "What would you do if you had zero consequences for one hour (round 4)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -276,14 +276,14 @@
     "id": 535,
     "question": "What challenge would you accept right now (round 4)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 536,
     "question": "What is the craziest thing on your bucket list (round 5)?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "PG13",
     "enabled": true
   },
   {
@@ -297,7 +297,7 @@
     "id": 538,
     "question": "What is the most adrenaline you have ever felt (round 5)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "R",
     "enabled": true
   },
   {
@@ -339,42 +339,42 @@
     "id": 544,
     "question": "What is your limit in Truth or Dare (round 5)?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 545,
     "question": "What challenge would you accept right now (round 5)?",
     "category": "Extreme",
-    "rating": "NSFW",
+    "rating": "PG13",
     "enabled": true
   },
   {
     "id": 546,
     "question": "What is the craziest thing on your bucket list (round 6)?",
     "category": "Extreme",
-    "rating": "R",
+    "rating": "NSFW",
     "enabled": true
   },
   {
     "id": 547,
     "question": "What dare would you never do no matter what (round 6)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "R",
     "enabled": true
   },
   {
     "id": 548,
     "question": "What is the most adrenaline you have ever felt (round 6)?",
     "category": "Extreme",
-    "rating": "PG13",
+    "rating": "PG",
     "enabled": true
   },
   {
     "id": 549,
     "question": "What rule would you break for $1000 (round 6)?",
     "category": "Extreme",
-    "rating": "PG",
+    "rating": "PG13",
     "enabled": true
   },
   {
