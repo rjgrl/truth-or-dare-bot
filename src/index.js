@@ -3,6 +3,7 @@ const { config } = require('./config');
 const { loadCommands } = require('./handlers/commandHandler');
 const { loadEvents } = require('./handlers/eventHandler');
 const { logger } = require('./utils/logger');
+const { startKeepAlive } = require('./keepAlive');
 
 if (!config.token || !config.clientId) {
   logger.error('Missing DISCORD_TOKEN or CLIENT_ID in .env — copy .env.example to .env');
@@ -16,6 +17,8 @@ const client = new Client({
 
 loadCommands(client);
 loadEvents(client);
+
+startKeepAlive();
 
 process.on('unhandledRejection', (err) => {
   logger.error('Unhandled rejection:', err);

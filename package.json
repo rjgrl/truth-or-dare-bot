@@ -9,7 +9,11 @@
     "register": "node src/register-commands.js",
     "generate-data": "node scripts/generate-datasets.js"
   },
-  "keywords": ["discord", "bot", "truth-or-dare"],
+  "keywords": [
+    "discord",
+    "bot",
+    "truth-or-dare"
+  ],
   "author": "",
   "license": "MIT",
   "engines": {
@@ -17,6 +21,7 @@
   },
   "dependencies": {
     "discord.js": "^14.16.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1"
   }
 }
