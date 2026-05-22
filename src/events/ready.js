@@ -8,7 +8,11 @@ module.exports = {
   once: true,
   async execute(client) {
     reloadQuestions();
-    await loadParties();
+    try {
+      await loadParties();
+    } catch (err) {
+      logger.error('Failed to load party sessions (bot will still run):', err.message);
+    }
     client.user.setActivity('Truth or Dare 🎲', { type: ActivityType.Playing });
     logger.success(`Logged in as ${client.user.tag}`);
     logger.info(`Serving ${client.guilds.cache.size} guild(s)`);

@@ -10,8 +10,16 @@ function startKeepAlive() {
     res.send('Truth or Dare Bot is alive and kicking!');
   });
 
-  app.listen(PORT, () => {
+  const server = app.listen(PORT, () => {
     logger.success(`Keep-alive server listening on port ${PORT}`);
+  });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      logger.warn(`Port ${PORT} already in use — keep-alive disabled (bot will still connect to Discord)`);
+      return;
+    }
+    logger.error('Keep-alive server error:', err.message);
   });
 }
 

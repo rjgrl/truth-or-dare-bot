@@ -16,13 +16,25 @@ if (!process.env.DATABASE_URL) {
   process.exit(1);
 }
 
+if (config.guildId) {
+  logger.warn(
+    `GUILD_ID is set (${config.guildId}) — slash commands from "npm run register" only apply to that guild. Clear GUILD_ID and re-register for all servers.`
+  );
+}
+
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds],
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
   partials: [Partials.Channel],
 });
 
 loadCommands(client);
 loadEvents(client);
+
+client.on('error', (err) => logger.error('Discord client error:', err));
+client.on('shardError', (err) => logger.error('Discord shard error:', err));
+client.on('shardDisconnect', (_event, shardId) => {
+  logger.warn(`Shard ${shardId} disconnected — if this repeats, check for a second bot process using the same token`);
+});
 
 startKeepAlive();
 

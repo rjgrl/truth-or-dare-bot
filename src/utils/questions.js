@@ -39,6 +39,7 @@ function reloadQuestions() {
 }
 
 async function getRecent(guildId) {
+  if (!guildId) return { truth: [], dare: [] };
   const { rows } = await query(
     'SELECT truth_ids, dare_ids FROM recent_questions WHERE guild_id = $1',
     [guildId]
@@ -48,6 +49,7 @@ async function getRecent(guildId) {
 }
 
 async function pushRecent(guildId, type, questionId) {
+  if (!guildId) return;
   const recent = await getRecent(guildId);
   const pool = config.recentQuestionPool;
   const list = [...(recent[type] || []), questionId];
@@ -67,6 +69,9 @@ async function pushRecent(guildId, type, questionId) {
 const { getGuildSettings } = require('./settings');
 
 async function filterByRating(questions, guildId, channelId) {
+  if (!guildId) {
+    return questions.filter((q) => q.rating !== 'NSFW');
+  }
   const settings = await getGuildSettings(guildId);
   const channelNsfw = settings.nsfwChannels?.includes(channelId);
   const allowNsfw = settings.nsfwEnabled && channelNsfw;

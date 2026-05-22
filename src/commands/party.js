@@ -29,13 +29,22 @@ function playersFromVoice(voice) {
   return ids;
 }
 
-/** Collect non-bot members with a role (best-effort; may skip uncached members) */
+/** Collect non-bot members with a role (requires Guild Members intent in portal + code) */
 async function playersFromRole(guild, role) {
   if (!role) return [];
-  const members = await guild.members.fetch();
-  return members
-    .filter((m) => !m.user.bot && m.roles.cache.has(role.id))
-    .map((m) => m.id);
+  try {
+    if (role.members?.size) {
+      return [...role.members.values()]
+        .filter((m) => !m.user.bot)
+        .map((m) => m.id);
+    }
+    const members = await guild.members.fetch();
+    return members
+      .filter((m) => !m.user.bot && m.roles.cache.has(role.id))
+      .map((m) => m.id);
+  } catch {
+    return [];
+  }
 }
 
 async function partyReplyEmbed(party, guildId) {

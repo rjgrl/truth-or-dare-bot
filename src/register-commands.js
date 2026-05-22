@@ -36,6 +36,7 @@ async function register() {
         body: commands,
       });
       logger.success(`Registered ${commands.length} guild commands (instant) for guild ${config.guildId}`);
+      logger.warn('Commands were NOT registered globally — other servers will not see slash commands until you clear GUILD_ID and run register again.');
     } else {
       await rest.put(Routes.applicationCommands(config.clientId), { body: commands });
       logger.success(`Registered ${commands.length} global commands (may take up to 1 hour)`);

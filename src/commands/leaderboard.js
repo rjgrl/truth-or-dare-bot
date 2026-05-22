@@ -9,7 +9,7 @@ module.exports = {
   async execute(interaction) {
     const entries = await getTopPlayers(interaction.guildId);
     await interaction.reply({
-      embeds: [leaderboardEmbed(entries, interaction.guild.name)],
+      embeds: [leaderboardEmbed(entries, interaction.guild?.name ?? 'Server')],
     });
   },
 };
